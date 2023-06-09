@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "supplier_name": "Alnatura",
+    "supplier_description": "Leading producer of organic foods"
+  },
+  {
+    "id": 2,
+    "supplier_name": "Nestle",
+    "supplier_description": "Producer of chemical based heavily processed foods"
+  },
+  {
+    "id": 3,
+    "supplier_name": "Dr Squatch",
+    "supplier_description": "Best personal care items on the market"
+  },
+  {
+    "id": 4,
+    "supplier_name": "DM Bio",
+    "supplier_description": "Organic food from leading producers"
+  },
+  {
+    "id": 5,
+    "supplier_name": "Kaufland",
+    "supplier_description": "Kaufland's own brand"
+  }
+]
