@@ -8,6 +8,55 @@
 			<hr class="product-card__line">
 			<span class="product-card__product-category">{{ product.categoryId }} </span>
 
+			<div class="product-card__icon-field">
+				<mat-icon
+						class="product-card__icon">
+<!--						[routerLink]="['/products/product-detail', product._id]"-->
+				open_in_new
+				</mat-icon>
+				<mat-icon
+						class="product-card__icon"
+
+						*ngIf="product.quantity > 0; else reMindMe"
+						[style.color]="product.in_wishlist ? 'red' : 'green'"
+				>favorite_border
+				</mat-icon>
+				<mat-icon
+						class="product-card__icon"
+
+						*ngIf="product.quantity > 0; else reMindMe"
+						[style.color]="product.in_compare ? 'red' : 'green'"
+				>compare_arrows
+				</mat-icon>
+				<ng-template #reMindMe>
+					<mat-icon class="card__icon">list</mat-icon>
+				</ng-template>
+				<mat-icon
+						class="product-card__icon"
+						[style.color]="product.quantity == 0 ? 'red' : 'green'"
+				>fiber_manual_record
+				</mat-icon>
+				<mat-icon class="product-card__icon">check_circle</mat-icon>
+				<mat-icon class="product-card__icon">question_answer</mat-icon>
+				<mat-icon class="product-card__icon">phone</mat-icon>
+			</div>
+
+			<button
+					mat-raised-button
+					class="product-card__button"
+
+					*ngIf="product.quantity > 0; else outOfStock"
+			>
+				<mat-icon
+						class="product-card__icon"
+						[style.color]="product.quantity == 0 ? 'red' : 'green'"
+						[style.color]="product.in_cart ? 'red' : 'green'"
+				>shopping_cart</mat-icon
+				>{{ product.price }}
+			</button>
+			<ng-template class="product-card__button" #outOfStock>
+				<div class="product-card__outOfStock">Out of stock!</div></ng-template
+			>
 			<span class="product-card__product-supplier" *ngIf="product.quantity > 0"></span>
 		</div>
 	</article>

@@ -12,9 +12,7 @@ body {
 :root {
     --height: 100vh;
 
-    /*Fonts*/
 
-    --font-primary: "Yu Gothic", sans-serif;
 
     /*Font size*/
 
@@ -36,7 +34,7 @@ body {
 
     /*Font family*/
 
-    --font-main: "Helvetica";
+    --font-primary: "Yu Gothic", sans-serif;
     --font-secondary: "Helvetica";
     --font-fallback: "Verdana";
 

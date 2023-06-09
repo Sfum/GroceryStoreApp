@@ -2,7 +2,7 @@
     display: flex;
 }
 .product-card {
-    height: 400px;
+    height: 420px;
     padding: var(--padding-lg);
     border-radius: var(--border-radius-sm);
 }
@@ -31,7 +31,7 @@
     text-align: start;
 }
 .product-card__product-category {
-    font-family: "Yu Gothic Light", sans-serif;
+    font-family: var(--font-primary);
     text-transform: capitalize;
     font-size: var(--font-size-sm);
     margin-top: var(--margin-sm);
@@ -58,11 +58,11 @@
     justify-content: space-between;
 }
 .product-card__outOfStock {
-    font-family: "Yu Gothic Light", sans-serif;
+    font-family: var(--font-primary);
     position: absolute;
     margin: var(--margin-sm);
-    top: 390px;
-    left: 100px;
+    top: 420px;
+    left: 90px;
 }
 @media only screen and (max-width: 900px) {
 }
