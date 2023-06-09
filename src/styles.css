@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: var(--font-primary)
+}
+
+:root {
+    --height: 100vh;
+
+    /*Fonts*/
+
+    --font-primary: "Yu Gothic", sans-serif;
+
+    /*Font size*/
+
+    --font-size-vsm: 10px;
+    --font-size-xsm: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xlg: 20px;
+    --font-size-vlg: 22px;
+
+    /*Colors*/
+
+    --color-5: #d4efdf;
+    --color-4: #a9dfbf;
+    --color-3: #7dcea0;
+    --color-2: #229954;
+    --color-1: #145a32;
+
+    /*Font family*/
+
+    --font-main: "Helvetica";
+    --font-secondary: "Helvetica";
+    --font-fallback: "Verdana";
+
+    /*Font Weight*/
+
+    --font-weight-xsm: 400;
+    --font-weight-sm: 500;
+    --font-weight-md: 600;
+    --font-weight-lg: 700;
+    --font-weight-xlg: 800;
+
+    /*Margin*/
+
+    --margin-xsm: 5px;
+    --margin-sm: 10px;
+    --margin-md: 20px;
+    --margin-lg: 30px;
+    --margin-xlg: 40px;
+
+    /*Padding*/
+
+    --padding-xsm: 5px;
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 30px;
+    --padding-xlg: 40px;
+
+    /*Border Radius*/
+
+    --border-radius-vsm: 2px;
+    --border-radius-xsm: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 32px;
+    --border-radius-xlg: 64px;
+    --border-radius-vlg: 128px;
+
+    /*Border colors*/
+
+    --border-color-5: #feffff;
+    --border-color-4: #def2f1;
+    --border-color-3: #3aafa9;
+    --border-color-2: #2b7a78;
+    --border-color-1: #17252a;
+
+    /*Border Lines*/
+
+    --border-line: 1px solid #eee;
+    --border-width1: 1px;
+
+    /*Contrast*/
+
+    --opacity-xsm: 0.9;
+    --opacity-sm: 0.8;
+    --opacity-md: 0.7;
+    --opacity-lg: 0.6;
+    --opacity-xlg: 0.5;
+
+    /*Width*/
+
+    --width100: 100%;
+    --width90: 90%;
+    --width80: 80%;
+    --width70: 70%;
+    --width60: 60%;
+    --width50: 50%;
+    --width40: 40%;
+    --width30: 30%;
+    --width20: 20%;
+
+    /*Height*/
+
+    --height100: 100%;
+    --height90: 90%;
+    --height80: 80%;
+    --height70: 70%;
+    --height60: 60%;
+    --height50: 50%;
+    --height40: 40%;
+    --height30: 30%;
+    --height20: 20%;
+}
