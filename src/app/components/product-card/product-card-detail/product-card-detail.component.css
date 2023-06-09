@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+}
+.product-card {
+    height: 400px;
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-sm);
+}
+.product-card__image {
+    background-size: cover;
+    height: 220px;
+}
+.product-card__image:hover {
+    opacity: 80%;
+}
+.product-card__line {
+    opacity: 70%;
+}
+.product-card__product-name {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-lg);
+    margin-top: var(--margin-lg);
+    font-weight: var(--font-weight-xlg);
+    text-align: start;
+}
+.product-card__product-supplier {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-sm);
+    margin-top: var(--margin-xsm);
+    font-weight: var(--font-weight-md);
+    text-align: start;
+}
+.product-card__product-category {
+    font-family: "Yu Gothic Light", sans-serif;
+    text-transform: capitalize;
+    font-size: var(--font-size-sm);
+    margin-top: var(--margin-sm);
+    font-weight: var(--font-weight-md);
+    text-align: start;
+}
+
+.product-card__icon {
+    margin-bottom: var(--margin-xsm);
+    padding-bottom: var(--padding-xsm);
+    margin-top: var(--margin-xsm);
+    padding-top: var(--padding-xsm);
+    opacity: var(--opacity-sm);
+    font-size: 20px;
+}
+.product-card__button {
+    margin: var(--margin-xsm);
+    text-align: center;
+    width: auto;
+}
+.product-card__icon-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-card__outOfStock {
+    font-family: "Yu Gothic Light", sans-serif;
+    position: absolute;
+    margin: var(--margin-sm);
+    top: 390px;
+    left: 100px;
+}
+@media only screen and (max-width: 900px) {
+}

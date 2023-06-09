@@ -1,0 +1,14 @@
+<mat-card class="container">
+	<article *ngIf="product">
+		<div class="product-card">
+			<img class="product-card__image" [src]="product.product_image" width="210"  alt="Product Image"/>
+			<span class="product-card__product-name">{{ product.product_name }}</span>
+			<hr class="product-card__line">
+			<span class="product-card__product-supplier">{{ product.supplierId }}</span>
+			<hr class="product-card__line">
+			<span class="product-card__product-category">{{ product.categoryId }} </span>
+
+			<span class="product-card__product-supplier" *ngIf="product.quantity > 0"></span>
+		</div>
+	</article>
+</mat-card>

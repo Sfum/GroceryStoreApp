@@ -1,0 +1,18 @@
+<div class="container">
+
+	<div class="card__container">
+
+		<div class="card__product--grid">
+			<app-product-card-detail
+					class="card__product--card"
+					*ngFor="
+          let product of productsSupplierView$ | async ;
+          index as i
+        "
+					[product]="product"
+			>
+			</app-product-card-detail>
+		</div>
+	</div>
+
+</div>

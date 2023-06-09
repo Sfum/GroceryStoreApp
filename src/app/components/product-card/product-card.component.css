@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin: 20px 20px 20px;
+}
+.card__container {
+    grid-column: 2/3;
+}
+.card__product--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    min-height: 800px;
+}
+.card__search--container {
+    margin: var(--margin-sm);
+}
+
+.card__product--card {
+    max-width: max-content;
+    width: fit-content;
+    margin: 5px 5px 5px;
+}
+.product__sidebar--left {
+    grid-column: 1/2;
+}
+.product__sidebar--right {
+    grid-column: 3/4;
+}
