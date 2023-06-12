@@ -2,15 +2,16 @@ import { Injectable } from '@angular/core';
 import {Product} from "../models/product";
 import {HttpClient} from "@angular/common/http";
 import {tap} from "rxjs";
+import {CategoryService} from "./category.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-
   MOCK_URL = 'assets/json/product-data.json';
-  // MOCK_URL = 'http://localhost:8000';
+
+  categories$ = this.categoryService.categories$
 
   products$ = this.httpClient
       .get<Product[]>(this.MOCK_URL)
@@ -18,6 +19,7 @@ export class ProductService {
 
   constructor(
       private httpClient: HttpClient,
+      private categoryService: CategoryService
   ) {}
 
 }
